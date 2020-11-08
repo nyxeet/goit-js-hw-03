@@ -1,3 +1,5 @@
+console.log('NEW TASK')
+
 const user = {
   name: 'Mango',
   age: 20,

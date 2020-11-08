@@ -1,3 +1,5 @@
+console.log('NEW TASK')
+
 /*
  * Типов транзацкий всего два.
  * Можно положить либо снять деньги со счета.
@@ -71,7 +73,6 @@ const account = {
    * Метод ищет и возвращает объект транзации по id
    */
     getTransactionDetails(id) {
-        console.log(this.transactions)
         for (let i = 0; i <= this.transactions.length; i += 1) {
             if (i + 1 === id ) {
                 return this.transactions[i];
@@ -99,9 +100,9 @@ account.deposit(2000);
 account.deposit(3000);
 account.deposit(3000);
 account.withdraw(2500);
-console.log(account.getBalance());
+
 console.table(account.transactions)
-console.log(account.balance);
-console.log(account.getTransactionDetails(4))
-console.log(account.getTransactionTotal("withdraw"))
-console.log(account.getTransactionTotal("deposit"))
+console.log("Общий баланс" , account.getBalance());
+console.log("Выводит по айди" ,account.getTransactionDetails(4))
+console.log("Сумма выдачи" ,account.getTransactionTotal("withdraw"))
+console.log("Сумма приема" ,account.getTransactionTotal("deposit"))

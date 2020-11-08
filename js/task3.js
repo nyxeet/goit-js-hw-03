@@ -1,3 +1,5 @@
+console.log('NEW TASK')
+
 const findBestEmployee = function (employees) {
     const values = Object.values(employees);
     let biggestValue = 0;

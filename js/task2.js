@@ -1,3 +1,5 @@
+console.log('NEW TASK')
+
 const countProps = function (obj) {
     let total = 0;
     for (const key in obj) {

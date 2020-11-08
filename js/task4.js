@@ -1,10 +1,10 @@
+console.log('NEW TASK')
 const countTotalSalary = function(employees) {
     const values = Object.values(employees);
     console.log(values)
     let total = 0;
     for (let i = 0; i < values.length; i += 1) {
         total += values[i];
-        console.log(i)
     }
     return `Общая сумма зарплаты ${total}`;
 };
