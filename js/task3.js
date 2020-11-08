@@ -8,10 +8,10 @@ const findBestEmployee = function (employees) {
     }
     for (const key in employees) {
         if (employees[key] === biggestValue) {
-            const result = [key, ":", employees[key]].join(" ");
-            return result;
+            return `${key} : ${employees[key]} `;
         }
-    }
+  }
+
 };
 
 /*
